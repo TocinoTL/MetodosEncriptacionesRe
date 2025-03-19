@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\carst\\source\\repos\\CifradoUnificado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B903C66-9F5C-4D26-B02F-896971CD6675}|CifradoUnificado\\CifradoUnificado.csproj|c:\\users\\carst\\source\\repos\\cifradounificado\\cifradounificado\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B903C66-9F5C-4D26-B02F-896971CD6675}|CifradoUnificado\\CifradoUnificado.csproj|solutionrelative:cifradounificado\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B903C66-9F5C-4D26-B02F-896971CD6675}|CifradoUnificado\\CifradoUnificado.csproj|C:\\Users\\carst\\source\\repos\\CifradoUnificado\\cifradounificado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B903C66-9F5C-4D26-B02F-896971CD6675}|CifradoUnificado\\CifradoUnificado.csproj|solutionrelative:cifradounificado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\carst\\source\\repos\\CifradoUnificado\\CifradoUnificado\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CifradoUnificado\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\carst\\source\\repos\\CifradoUnificado\\CifradoUnificado\\MainWindow.xaml*",
+              "RelativeToolTip": "CifradoUnificado\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-19T02:46:37.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carst\\source\\repos\\CifradoUnificado\\CifradoUnificado\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CifradoUnificado\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carst\\source\\repos\\CifradoUnificado\\CifradoUnificado\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "CifradoUnificado\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAAEEAAAAAAAAAAAqwEIEAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T00:08:59.931Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

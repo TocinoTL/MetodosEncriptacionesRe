@@ -1,0 +1,15 @@
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\bin\Debug\CifradoUnificado.exe.config
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\bin\Debug\CifradoUnificado.exe
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\bin\Debug\CifradoUnificado.pdb
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.csproj.AssemblyReference.cache
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\MainWindow.g.cs
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\App.g.cs
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado_MarkupCompile.cache
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado_MarkupCompile.lref
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\MainWindow.baml
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.g.resources
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.Properties.Resources.resources
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.csproj.GenerateResource.cache
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.csproj.CoreCompileInputs.cache
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.exe
+C:\Users\carst\source\repos\CifradoUnificado\CifradoUnificado\obj\Debug\CifradoUnificado.pdb

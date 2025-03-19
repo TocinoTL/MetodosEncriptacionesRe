@@ -1,0 +1,173 @@
+﻿<Window x:Class="CifradoUnificado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CifradoUnificado"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Margin="10">
+
+        <TabControl Height="414" Width="780">
+            <TabItem Header="Encriptación PBE">
+                <Canvas>
+                    <!-- Botón para seleccionar archivo -->
+
+                    <!-- Caja de texto para mostrar la ruta del archivo -->
+
+                    <!-- Etiqueta para la contraseña -->
+                    <TextBlock Text="Contraseña:" Canvas.Left="163" Canvas.Top="80" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                    <!-- Caja de texto para la contraseña -->
+                    <PasswordBox Name="txtPassword" Width="200" Canvas.Left="250" Canvas.Top="74" HorizontalAlignment="Center" Height="32" VerticalAlignment="Top"/>
+
+                    <!-- Etiqueta para la cantidad de iteraciones -->
+                    <TextBlock Text="Cantidad de Iteraciones:" Canvas.Left="75" Canvas.Top="134" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                    <!-- Caja de texto para las iteraciones -->
+                    <TextBox Name="txtIteraciones" Width="200" Canvas.Left="250" Canvas.Top="134" HorizontalAlignment="Center" Height="27" VerticalAlignment="Top"/>
+
+                    <!-- Botón para encriptar y guardar -->
+
+                    <!-- Botón para desencriptar archivo -->
+
+                    <!-- Etiqueta para mostrar la cantidad de iteraciones -->
+                    <Label x:Name="lblCantidadIteracion" Content="" Canvas.Left="20" Canvas.Top="370"/>
+                    <TextBox x:Name="ttbResultPBE" Canvas.Left="75" TextWrapping="Wrap" Canvas.Top="244" Width="632" Height="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="btnProcesar" Content="Procesar" Canvas.Left="291" Canvas.Top="180" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" FontSize="16" Click="btnProcesar_Click"/>
+                </Canvas>
+            </TabItem>
+
+
+            <TabItem Header="Encriptación AES">
+                <Canvas>
+                    <TabControl Height="414" Width="800" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TabItem Header="Encriptación AES">
+                            <Canvas>
+                                <!-- Botón para seleccionar archivo a encriptar -->
+                                <Button Content="Seleccionar Archivo" Click="SeleccionarArchivoAESClick" Width="150" Height="30" Canvas.Left="20" Canvas.Top="30"/>
+
+                                <!-- Caja de texto para mostrar la ruta del archivo -->
+                                <TextBox Name="txtRutaArchivoAES" Width="500" Height="30" IsReadOnly="True" Canvas.Left="180" Canvas.Top="30"/>
+
+
+                                <TextBlock Text="Cantidad de iteraciones" Canvas.Left="12" Canvas.Top="84" FontSize="16"/>
+                                <TextBlock Text="CLAVE AES" Canvas.Left="28" Canvas.Top="134" FontSize="16"/>
+                                <PasswordBox Name="txtPasswordAES" Height="38" Canvas.Top="134" Width="277" Canvas.Left="153"/>
+
+
+                                <TextBox Name="Cant_Iteraciones" Canvas.Left="232" Canvas.Top="82" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.485,1.484" Width="155"/>
+
+                                <!-- Botón para encriptar archivo -->
+                                <Button x:Name="btnEncriptar" Content="Encriptar Archivo" Click="Btn_EncriptarAES_Click" Width="150" Height="40" Canvas.Left="66" Canvas.Top="193" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+                                <!-- Etiqueta para mostrar el resultado de la acción -->
+                                <TextBlock Name="lblResultadoAES" Text="" Canvas.Left="20" Canvas.Top="243" FontSize="14" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top" Width="266" Height="65"/>
+
+                                <!-- Caja de texto para mostrar el archivo encriptado o desencriptado -->
+                                <TextBox Name="txtResultadoAES" Width="499" Height="113" IsReadOnly="True" Canvas.Left="200" Canvas.Top="243" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            </Canvas>
+                        </TabItem>
+                    </TabControl>
+                </Canvas>
+
+            </TabItem>
+
+            <TabItem Header="Encriptación RSA">
+                <Canvas>
+                    <Button x:Name="LoadFileButton" Content="Cargar Archivo" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="120" Click="LoadFileButton_Click"/>
+                    <TextBox x:Name="FilePathTextBox" HorizontalAlignment="Left" Height="25" Margin="150,20,0,0" VerticalAlignment="Top" Width="300" IsReadOnly="True"/>
+                    <Button x:Name="StartButton" Content="Iniciar Prueba" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Width="120" Click="StartButton_Click"/>
+                    <Label x:Name="ResultLabel" Content="Resultados aparecerán aquí" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" Width="450"/>
+                    <Label x:Name="TimeLabel" Content="Tiempo: 0 ms" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Width="450"/>
+                    <Label x:Name="MemoryLabel" Content="Memoria usada: 0 MB" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" Width="450"/>
+                    <Label x:Name="CpuLabel" Content="Carga del CPU: 0 %" HorizontalAlignment="Left" Margin="20,220,0,0" VerticalAlignment="Top" Width="450"/>
+                </Canvas>
+            </TabItem>
+
+            <TabItem Header="Encriptación Diffie">
+                <Canvas>
+                    <Grid>
+                        <!-- Botón para seleccionar archivo -->
+                        <Button Content="Seleccionar Archivo" Width="200" Height="30"
+VerticalAlignment="Top" Margin="48,19,526,0"
+Click="SelectFile"/>
+
+                        <!-- Muestra el nombre del archivo seleccionado -->
+                        <TextBlock x:Name="FileNameTextBlock" Text="No se ha seleccionado archivo"
+   VerticalAlignment="Top" Margin="48,54,212,0"
+   FontStyle="Italic"/>
+
+                        <!-- Caja de texto para mostrar el contenido del archivo -->
+                        <TextBox x:Name="InputTextBox" Text="El contenido del archivo aparecerá aquí..."
+ Width="540" Height="150" Margin="35,104,199,132"
+ TextWrapping="Wrap" AcceptsReturn="True"/>
+
+                        <!-- Botón para iniciar la encriptación -->
+                        <Button Content="Iniciar Encriptación" Width="200" Height="40"
+VerticalAlignment="Top" Margin="517,54,57,0"
+Click="StartEncryption"/>
+
+                        <!-- Etiqueta para mostrar los resultados -->
+                        <TextBlock x:Name="ResultTextBlock" Text="Resultados aparecerán aquí..."
+   VerticalAlignment="Bottom" HorizontalAlignment="Left"
+   TextWrapping="Wrap" Width="540" Margin="48,0,0,10" Height="78"/>
+                    </Grid>
+
+
+                </Canvas>
+            </TabItem>
+
+            <TabItem Header="Encriptación SHA" Margin="-2,-2,-2,2">
+                <Canvas>
+                    <!-- Botón para seleccionar archivo -->
+                    <Button Content="Seleccionar Archivo" Click="SeleccionarArchivoSHA_Click" Width="150" Height="30" Canvas.Left="20" Canvas.Top="20"/>
+
+                    <!-- Caja de texto para mostrar la ruta del archivo -->
+                    <TextBox Name="txtRutaArchivoSHA" Width="500" Height="30" IsReadOnly="True" Canvas.Left="180" Canvas.Top="20"/>
+
+                    <!-- Etiqueta para mostrar el contenido del archivo -->
+                    <TextBlock Text="Contenido del archivo:" Canvas.Left="20" Canvas.Top="70" FontSize="14"/>
+
+                    <!-- Caja de texto para mostrar el contenido del archivo -->
+                    <TextBox Name="txtContenidoArchivoSHA" Width="660" Height="100" IsReadOnly="True" Canvas.Left="20" Canvas.Top="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+                    <!-- Etiqueta para la cantidad de iteraciones -->
+                    <TextBlock Text="Cantidad de iteraciones:" Canvas.Left="20" Canvas.Top="220" FontSize="14"/>
+
+                    <!-- Caja de texto para ingresar las iteraciones -->
+                    <TextBox Name="txtIteracionesSHA" Width="100" Height="30" Canvas.Left="180" Canvas.Top="220"/>
+
+                    <!-- Botón para encriptar en SHA-256 -->
+                    <Button Content="Encriptar SHA-256" Click="EncriptarSHA_Click" Width="150" Height="40" Canvas.Left="300" Canvas.Top="220"/>
+
+                    <!-- Etiqueta para mostrar el resultado en SHA-256 -->
+                    <TextBlock Text="Hash SHA-256:" Canvas.Left="20" Canvas.Top="245" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                    <!-- Caja de texto para mostrar el hash resultante -->
+                    <TextBox Name="txtHashSHA" Width="660" Height="99" IsReadOnly="True" Canvas.Left="20" Canvas.Top="269" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </Canvas>
+            </TabItem>
+            <TabItem Header="Modificacion 1">
+                <Canvas Margin="0,0,-95,-76">
+                    <TextBlock Text="Palabra:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
+                    <TextBox x:Name="txtPalabra" Width="200" Height="25" Margin="100,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+                    <TextBlock Text="Año de Nacimiento:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0"/>
+                    <TextBox x:Name="txtAnio" Width="100" Height="25" Margin="150,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+                    <Button Content="Encriptar" Width="100" Height="30" Margin="150,230,645,230" Click="BtnEncriptar_Click"/>
+                    <Button Content="Desencriptar" Width="100" Height="30" Margin="275,205,425,205" Click="BtnDesencriptar_Click"/>
+
+                    <TextBlock Text="Resultado:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,150,0,0"/>
+                    <TextBox x:Name="txtResultadoM" Width="300" Height="25" Margin="100,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True"/>
+                </Canvas>
+
+            </TabItem>
+
+
+        </TabControl>
+
+    </Canvas>
+</Window>
