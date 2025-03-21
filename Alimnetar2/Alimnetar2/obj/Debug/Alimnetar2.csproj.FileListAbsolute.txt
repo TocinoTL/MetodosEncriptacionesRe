@@ -1,0 +1,15 @@
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.csproj.AssemblyReference.cache
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\MainWindow.g.cs
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\App.g.cs
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2_MarkupCompile.cache
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2_MarkupCompile.lref
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\bin\Debug\Alimnetar2.exe.config
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\bin\Debug\Alimnetar2.exe
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\bin\Debug\Alimnetar2.pdb
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\MainWindow.baml
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.g.resources
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.Properties.Resources.resources
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.csproj.GenerateResource.cache
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.csproj.CoreCompileInputs.cache
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.exe
+C:\Users\carst\source\repos\Alimnetar2\Alimnetar2\obj\Debug\Alimnetar2.pdb
